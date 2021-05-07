@@ -20,7 +20,6 @@ func SearchArticles(q string, page int) (SearchResult, error) {
 	searchParameters := &api.SearchCollectionParams{
 		Q:       q,
 		QueryBy: []string{"title"},
-		SortBy:  &([]string{"published_at:desc"}),
 		Page:    &page,
 		PerPage: &perPage,
 	}

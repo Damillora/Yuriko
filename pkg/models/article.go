@@ -7,7 +7,6 @@ type Article struct {
 	Slug        string  `json:"slug"`
 	Excerpt     string  `json:"excerpt"`
 	HtmlMarkup  string  `json:"html"`
-	PrimaryTag  string  `json:"primary_tag"`
 	PublishedAt float64 `json:"published_at"`
 }
 
@@ -18,7 +17,6 @@ type ArticleCreateModel struct {
 	Slug        string  `json:"slug"`
 	Excerpt     string  `json:"excerpt"`
 	HtmlMarkup  string  `json:"html"`
-	PrimaryTag  string  `json:"primary_tag"`
 	PublishedAt float64 `json:"published_at"`
 }
 
@@ -28,6 +26,5 @@ type ArticleSearchResult struct {
 	Slug        string `json:"slug"`
 	Excerpt     string `json:"excerpt"`
 	HtmlMarkup  string `json:"html"`
-	PrimaryTag  string `json:"primary_tag"`
 	PublishedAt string `json:"published_at"`
 }

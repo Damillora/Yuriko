@@ -53,7 +53,6 @@ func Webhook(c *gin.Context) {
 			Slug:        body.Post.Current.Slug,
 			Excerpt:     body.Post.Current.Excerpt,
 			HtmlMarkup:  body.Post.Current.HtmlMarkup,
-			PrimaryTag:  body.Post.Current.PrimaryTag,
 			PublishedAt: float64(time.Unix()),
 		}
 		services.ImportArticle(newArticle)

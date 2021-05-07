@@ -14,6 +14,5 @@ type WebhookPost struct {
 	Slug        string `json:"slug"`
 	Excerpt     string `json:"excerpt"`
 	HtmlMarkup  string `json:"html"`
-	PrimaryTag  string `json:"primary_tag"`
 	PublishedAt string `json:"published_at"`
 }

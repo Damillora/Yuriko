@@ -47,10 +47,6 @@ func CreateDatabaseSchema() {
 				Type: "string",
 			},
 			{
-				Name: "primary_tag",
-				Type: "string",
-			},
-			{
 				Name: "published_at",
 				Type: "int64",
 			},

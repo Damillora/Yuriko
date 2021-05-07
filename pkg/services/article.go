@@ -19,7 +19,7 @@ func SearchArticles(q string, page int) (SearchResult, error) {
 	perPage := 10
 	searchParameters := &api.SearchCollectionParams{
 		Q:       q,
-		QueryBy: []string{"title", "slug", "primary_tag", "excerpt", "html"},
+		QueryBy: []string{"title", "slug", "excerpt", "html"},
 		Page:    &page,
 		PerPage: &perPage,
 	}

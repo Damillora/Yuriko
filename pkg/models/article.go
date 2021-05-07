@@ -25,6 +25,5 @@ type ArticleSearchResult struct {
 	Url         string `json:"url"`
 	Slug        string `json:"slug"`
 	Excerpt     string `json:"excerpt"`
-	HtmlMarkup  string `json:"html"`
 	PublishedAt string `json:"published_at"`
 }

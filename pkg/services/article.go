@@ -12,6 +12,7 @@ import (
 type SearchResult struct {
 	Page    int                          `json:"page"`
 	PerPage int                          `json:"per_page"`
+	Total   int                          `json:"total"`
 	Result  []models.ArticleSearchResult `json:"result"`
 }
 
@@ -44,6 +45,7 @@ func SearchArticles(q string, page int) (SearchResult, error) {
 	return SearchResult{
 		Page:    page,
 		PerPage: perPage,
+		Total:   searchResult.Found,
 		Result:  articles,
 	}, nil
 }
